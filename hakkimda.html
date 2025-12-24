@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hakkımızda | DENCON İnşaat</title>
+  <meta name="description" content="DENCON İnşaat: Güven, kalite ve sürdürülebilirlik odaklı inşaat çözümleri. Hakkımızda sayfasında vizyonumuz, değerlerimiz ve ekibimiz.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{
+      --brand:#0d6efd;        /* Bootstrap primary */
+      --accent:#ffc107;       /* Amber accent */
+      --dark:#1f2937;         /* Modern dark */
+      --muted:#6c757d;
+    }
+    body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji"; color:#212529;}
+    .hero{
+      background: linear-gradient(180deg, rgba(13,110,253,0.08), rgba(13,110,253,0)) , url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+      color:#fff;
+    }
+    .hero .overlay{background: rgba(0,0,0,0.45);}
+    .section-title{font-weight: 700;}
+    .value-icon{
+      width:48px;height:48px;border-radius:12px;background:#eef4ff;display:grid;place-items:center;color:var(--brand);
+    }
+    .stat{border-radius:12px;}
+    .timeline::before{
+      content:""; position:absolute; left:24px; top:0; bottom:0; width:2px; background:#e9ecef;
+    }
+    .timeline-item{position:relative; padding-left:64px;}
+    .timeline-item::before{
+      content:""; position:absolute; left:16px; top:4px; width:16px; height:16px; background:var(--brand); border-radius:50%;
+      box-shadow:0 0 0 4px #e9ecef;
+    }
+    .badge-cert{background:#f8f9fa; border:1px solid #e9ecef;}
+    .team-card img{object-fit:cover; height:240px;}
+    .logo-grid img{filter: grayscale(100%); opacity:.8;}
+    .logo-grid img:hover{filter:none; opacity:1; transition:.2s;}
+    /* Accessibility tweaks */
+    a:focus-visible, button:focus-visible{outline:3px solid var(--accent); outline-offset:2px;}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg bg-warning" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">inşaat sitesi</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+       
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Anasayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hakkimda.html">Hakkımda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hizmetler.html">Hizmetler</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="ürünler.html">Ürünler</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="iletisim.html">iletişim</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero -->
+  <header class="hero position-relative">
+    <div class="overlay">
+      <div class="container py-5 py-lg-6">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <h1 class="display-5 fw-bold">Güvenle inşa ediyor, geleceği tasarlıyoruz</h1>
+            <p class="lead mb-4">2009’dan bu yana konut, ticari ve endüstriyel projelerde kalite, bütçe ve zaman yönetimini bir arada sunuyoruz.</p>
+            <div class="d-flex gap-2">
+              <a href="#hikaye" class="btn btn-light text-dark">Hikayemiz</a>
+              <a href="#degerler" class="btn btn-warning">Değerlerimiz</a>
+            </div>
+          </div>
+          <div class="col-lg-5 mt-4 mt-lg-0">
+            <div class="bg-white text-dark p-4 rounded-3 shadow">
+              <h2 class="h5 mb-3">Hızlı Bilgi</h2>
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex align-items-center gap-3 mb-2">
+                  <span class="value-icon"><i class="bi bi-building"></i></span>
+                  <span><strong>150+ proje</strong> başarıyla tamamlandı</span>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-2">
+                  <span class="value-icon"><i class="bi bi-award"></i></span>
+                  <span><strong>ISO 9001 & 14001</strong> kalite ve çevre standartları</span>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <span class="value-icon"><i class="bi bi-geo-alt"></i></span>
+                  <span><strong>Türkiye genelinde</strong> faaliyet</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hikaye -->
+  <section id="hikaye" class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="section-title h3">Şirket hikayesi</h2>
+          <p>DENCON İnşaat, kurulduğu günden bu yana güvenilirlik, şeffaflık ve mühendislik kalitesini merkezine alarak büyüdü. Müşteri ihtiyaçlarını doğru analiz edip, sahada uygulaması güçlü disiplinlerle birleştiriyoruz.</p>
+          <p>Bugün; yüksek katlı konutlardan lojistik merkezlerine, okul ve hastane projelerinden restorasyon işlerine kadar geniş bir yelpazede anahtar teslim çözümler sunuyoruz.</p>
+          <div class="d-flex gap-3 mt-3">
+            <a class="btn btn-warning" href="#degerler">Değerlerimiz</a>
+            <a class="btn btn-outline-warning" href="#ekip">Ekiple tanışın</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm">
+            <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Tanıtım videosu" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Değerler -->
+  <section id="degerler" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title h3 mb-4">Değerlerimiz</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="value-icon mb-3"><i class="bi bi-shield-check"></i></div>
+              <h3 class="h5">Güven ve şeffaflık</h3>
+              <p>Planlama ve raporlama süreçlerinde açık iletişim kurar, bütçe ve zamanlamayı gerçekçi biçimde yönetiriz.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="value-icon mb-3"><i class="bi bi-hammer"></i></div>
+              <h3 class="h5">Kalite ve işçilik</h3>
+              <p>Malzeme seçimi ve saha denetimlerinde kalite standartlarından ödün vermeyiz.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="value-icon mb-3"><i class="bi bi-recycle"></i></div>
+              <h3 class="h5">Sürdürülebilirlik</h3>
+              <p>Enerji verimli çözümler ve çevre dostu uygulamalarla uzun ömürlü yapılar inşa ederiz.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sayılarla -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title h3 mb-4">Sayılarla DENCON</h2>
+      <div class="row g-3">
+        <div class="col-6 col-lg-3">
+          <div class="stat p-4 bg-light text-center">
+            <div class="display-6 fw-bold text-primary">15+</div>
+            <div class="text-muted">Yıl deneyim</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat p-4 bg-light text-center">
+            <div class="display-6 fw-bold text-primary">150+</div>
+            <div class="text-muted">Tamamlanan proje</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat p-4 bg-light text-center">
+            <div class="display-6 fw-bold text-primary">98%</div>
+            <div class="text-muted">Müşteri memnuniyeti</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat p-4 bg-light text-center">
+            <div class="display-6 fw-bold text-primary">20+</div>
+            <div class="text-muted">İlde faaliyet</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zaman çizelgesi -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title h3 mb-4">Dönüm noktaları</h2>
+      <div class="position-relative timeline">
+        <div class="timeline-item mb-4">
+          <h3 class="h6 mb-1">2009 — Kuruluş</h3>
+          <p>İlk konut projesiyle sektöre giriş.</p>
+        </div>
+        <div class="timeline-item mb-4">
+          <h3 class="h6 mb-1">2015 — İlk endüstriyel tesis</h3>
+          <p>5000 m² kapalı alan lojistik merkezi.</p>
+        </div>
+        <div class="timeline-item mb-4">
+          <h3 class="h6 mb-1">2019 — ISO sertifikaları</h3>
+          <p>Kalite ve çevre yönetim sistemleri belgelendi.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 class="h6 mb-1">2023 — Akıllı yapı projeleri</h3>
+          <p>IoT ve enerji verimliliği entegrasyonları.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ekip -->
+  <section id="ekip" class="py-5">
+    <div class="container">
+      <h2 class="section-title h3 mb-4">Ekiple tanışın</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card team-card h-100">
+            <img src="images/placeholder.png" alt="Proje yöneticisi">
+            <div class="card-body">
+              <h3 class="h5 mb-1">Ayşe Demir</h3>
+              <p class="text-muted mb-2">Proje Yöneticisi</p>
+              <p>Planlama, bütçe ve risk yönetiminde 10+ yıl deneyim.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card team-card h-100">
+            <img src="images/placeholder.png" alt="Saha şefi">
+            <div class="card-body">
+              <h3 class="h5 mb-1">Mehmet Yılmaz</h3>
+              <p class="text-muted mb-2">Saha Şefi</p>
+              <p>Kalite kontrol ve iş güvenliği odaklı saha yönetimi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card team-card h-100">
+            <img src="images/placeholder.png" alt="Mimar">
+            <div class="card-body">
+              <h3 class="h5 mb-1">Elif Kaya</h3>
+              <p class="text-muted mb-2">Mimar</p>
+              <p>Estetik ve işlevi birleştiren sürdürülebilir tasarımlar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sertifikalar ve iş birlikleri -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title h3 mb-4">Sertifikalar ve iş birlikleri</h2>
+      <div class="d-flex flex-wrap gap-2 mb-4">
+        <span class="badge badge-cert rounded-pill px-3 py-2">ISO 9001</span>
+        <span class="badge badge-cert rounded-pill px-3 py-2">ISO 14001</span>
+        <span class="badge badge-cert rounded-pill px-3 py-2">İSG Uygunluk</span>
+        <span class="badge badge-cert rounded-pill px-3 py-2">TSE Belgeleri</span>
+      </div>
+      <div class="logo-grid d-grid" style="grid-template-columns: repeat(5, 1fr); gap: 16px;">
+        <img src="https://dummyimage.com/140x60/eeeeee/aaaaaa.png&text=Partner+1" alt="Partner 1">
+        <img src="https://dummyimage.com/140x60/eeeeee/aaaaaa.png&text=Partner+2" alt="Partner 2">
+        <img src="https://dummyimage.com/140x60/eeeeee/aaaaaa.png&text=Partner+3" alt="Partner 3">
+        <img src="https://dummyimage.com/140x60/eeeeee/aaaaaa.png&text=Partner+4" alt="Partner 4">
+        <img src="https://dummyimage.com/140x60/eeeeee/aaaaaa.png&text=Partner+5" alt="Partner 5">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="teklif" class="py-5">
+    <div class="container">
+      <div class="bg-primary text-white p-4 p-lg-5 rounded-3 d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-3">
+        <div>
+          <h2 class="h4 mb-2">Projeniz için güvenilir bir ekip mi arıyorsunuz?</h2>
+          <p class="mb-0">Keşif ve teklif için bizimle iletişime geçin. En kısa sürede dönüş sağlıyoruz.</p>
+        </div>
+        <a href="#iletisim" class="btn btn-light text-dark">İletişime geç</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- İletişim -->
+  <footer id="iletisim" class="bg-dark text-white pt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h3 class="h5">DENCON İnşaat</h3>
+          <p class="text-white-50">Merkez: Defne, Hatay • Türkiye genelinde hizmet</p>
+          <p class="text-white-50">Vergi No: 1234567890</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h5">İletişim</h3>
+          <ul class="list-unstyled">
+            <li><a class="link-light" href="tel:+90-555-000-0000">+90 555 000 0000</a></li>
+            <li><a class="link-light" href="mailto:info@dencon.com">info@dencon.com</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h5">Bülten</h3>
+          <form class="d-flex gap-2" aria-label="E-posta bülteni">
+            <input type="email" class="form-control" placeholder="E-posta adresiniz" required>
+            <button class="btn btn-warning" type="submit">Kaydol</button>
+          </form>
+        </div>
+      </div>
+      <div class="border-top border-secondary mt-4 pt-3 pb-4 d-flex justify-content-between">
+        <small class="text-white-50">© 2025 DENCON İnşaat. Tüm hakları saklıdır.</small>
+        <div class="d-flex gap-3">
+          <a class="link-light" href="#">KVKK</a>
+          <a class="link-light" href="#">Çerez Politikası</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons (optional) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</body>
+</html>
